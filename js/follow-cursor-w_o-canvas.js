@@ -27,8 +27,6 @@ function showCircle() {
     mouseY > rect.y &&
     mouseY < rect.y + rect.height
   ) {
-    console.log(rect.x);
-    console.log(mouseX);
     circle.classList.add('show-circle');
   } else {
     circle.classList.remove('show-circle');
