@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Follow the mouse cursor w/o canvas</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 80px;
+      }
+      .container {
+        width: 100%;
+        height: 500px;
+        background: lightgray;
+        overflow: hidden;
+      }
+      .circle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 25px;
+        background: rgb(253, 130, 171);
+        transform: scale(0.1);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.2s ease 0.2s;
+      }
+      .show-circle {
+        transform: scale(1);
+        opacity: 1;
+        transition: transform 0.3s ease-in-out, opacity 0.1s ease 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+    </div>
+    <script src="js/follow-cursor-w_o-canvas.js"></script>
+  </body>
+</html>
