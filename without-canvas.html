@@ -28,6 +28,11 @@
         transform: scale(0.1);
         opacity: 0;
         transition: transform 0.3s ease-in-out, opacity 0.2s ease 0.2s;
+        /* 
+          ignore mouse interaction on overlay element, keeping elements beneath
+          interactable. 
+        */
+        pointer-events: none;
       }
       .show-circle {
         transform: scale(1);
