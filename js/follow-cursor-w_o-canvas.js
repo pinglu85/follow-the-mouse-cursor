@@ -42,7 +42,7 @@ function hideCircle() {
 function getMousePosition(e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
-  showCircle();
+  // showCircle();
 }
 
 function update() {
