@@ -21,7 +21,7 @@ function hideCircle() {
 }
 
 // Method A:
-// Instead of using 'mouseleave' listner, use the boundary box of .container
+// Instead of using 'mouseleave' listener, use the boundary box of .container
 // to solve the problem that the circle element hijacking the mouseleave event,
 // as when moving it to follow the cursor, the mouse was always over the circle
 // and the circle consumes the space that the leave event needs.
